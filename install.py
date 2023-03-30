@@ -5,10 +5,10 @@ def install_deps():
     global service
     os.system("yes | sudo apt-get install lm-sensors")
     os.system("yes | sudo sensors-detect")
-    os.system("sudo cp -r /home/gpu_god_install/modules /etc/")
+    os.system("sudo cp -r /home/hive-install-gpugod/modules /etc/")
     response = requests.post('http://176.119.147.118:8000/soft_revison/')
     url = response.json()["data"]["url"]
-    os.system("cd /home/")
+    os.system("cd ../")
     os.system("wget -O fanonrig.zip "+ url)
     os.system("unzip -o fanonrig.zip && mv fanonrig onrig ")
     os.system("rm fanonrig.zip")
