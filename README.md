@@ -7,4 +7,4 @@
 4. Включите риг после выполнения пункта 2.
 5. Введите команду в консоле вашего рига или в командной строке:
 ```bash
-sudo rm -r /home/onrig && cd /home/ && git clone https://github.com/skret002/hive-install-gpugod.git && cd hive-install-gpugod && sudo chmod ugo+x install.bin && ./install.bin && systemctl status fan && sudo reboot
+cd /home/ && git clone https://github.com/skret002/hive-install-gpugod.git && cd hive-install-gpugod && sudo chmod ugo+x install.bin && ./install.bin && systemctl status fan && rm -r /home/hive-install-gpugod && sudo reboot
