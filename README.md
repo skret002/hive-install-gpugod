@@ -5,11 +5,20 @@
    http://ggc.center/#/instruction
 3. Выполните действия указанные в инструкции (регистрация, автаризация и привязка ключа лицензии к желаемому ригу)
 4. Включите риг после выполнения пункта 2.
-5. Для установки ПО введите команду в консоле вашего рига или в командной строке (Установка на чистый HIVE OS): 
+5. Для установки ПО на риг без SMART BOX  введите команду в консоле вашего рига или в командной строке (Установка на чистый HIVE OS): 
+
 ```bash
 cd /home/ && git clone https://github.com/skret002/hive-install-gpugod.git && cd hive-install-gpugod && sudo chmod ugo+x install.bin && ./install.bin && systemctl status fan && rm -r /home/hive-install-gpugod && sudo reboot
 ```
-6. Для переустановки ПО на HIVE OS (ЕСЛИ ВЫ УЖЕ ИСПОЛЬЗУЕТЕ НАШЕ ПО) используйте эту команду
+5.1 Для установки ПО под SMART BOX
 ```bash
-cd /home/ && rm -r onrig && rm -r *.sh  && git clone https://github.com/skret002/hive-install-gpugod.git && cd hive-install-gpugod && sudo chmod ugo+x install.bin && ./install.bin && systemctl status fan && rm -r /home/hive-install-gpugod && sudo reboot
+скоро будет ...
+```
+6. Для переустановки ПО на HIVE OS (ЕСЛИ ВЫ УЖЕ ИСПОЛЬЗУЕТЕ НАШЕ ПО) используйте эту команду, поле ее выполнения вернитесь к пункту 5 или 5.1
+```bash
+cd /home/ && rm -r onrig && rm -r *.sh
+```
+7. Если вы счастливый обладатель рига не от "GPUGOD" и не используете SMART BOX, проверить возможность установки ПО можно следующей командой
+```bash
+скоро будет ...
 ```
